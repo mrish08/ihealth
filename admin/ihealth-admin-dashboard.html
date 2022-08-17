@@ -25,17 +25,16 @@
 
 </head>
 
-<body class="loading"
-    data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+<body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
     <!-- Begin page -->
     <div class="wrapper">
         <!-- ========== Left Sidebar Start ========== -->
         <div class="leftside-menu">
 
             <!-- LOGO -->
-            <a href="bitbo-admin-index.html" class="logo text-center logo-light">
+            <a href="ihealth-admin-dashboard.html" class="logo text-center logo-light">
                 <span class="logo-lg">
-                    <img src="../assets/images/bitbo-logo-with-text.png" alt="" height="40">
+                    <img src="../assets/images/ihealth-logo-with-text.png" alt="" height="40">
                 </span>
             </a>
 
@@ -47,69 +46,34 @@
                     <li class="side-nav-title side-nav-item">Menu</li>
 
                     <li class="side-nav-item">
-                        <a href="bitbo-admin-index.html" class="side-nav-link">
+                        <a href="ihealth-admin-dashboard.html" class="side-nav-link">
                             <i class="uil-chart-pie"></i>
                             <span> Dashboard </span>
                         </a>
                     </li>
-
                     <li class="side-nav-item">
-                        <a href="bitbo-admin-certificates.html" class="side-nav-link">
+                        <a href="ihealth-admin-appointment.html" class="side-nav-link">
+                            <i class="uil-postcard"></i>
+                            <span> Appointment </span>
+                        </a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="ihealth-admin-senior.html" class="side-nav-link">
+                            <i class="uil-user-square"></i>
+                            <span> Senior Cititzens </span>
+                        </a>
+                    </li>
+                    <li class="side-nav-item">
+                        <a href="ihealth-admin-certificates.html" class="side-nav-link">
                             <i class="uil-clipboard-alt"></i>
                             <span> Certificates </span>
                         </a>
                     </li>
 
-                    <li class="side-nav-item">
-                        <a href="bitbo-admin-blotter.html" class="side-nav-link">
-                            <i class="uil-comment-exclamation"></i>
-                            <span> Blotter </span>
-                        </a>
-                    </li>
+                    
 
-                    <li class="side-nav-item">
-                        <a href="bitbo-admin-users.html" class="side-nav-link">
-                            <i class="uil-user-square"></i>
-                            <span> Users </span>
-                        </a>
-                    </li>
-
-                    <li class="side-nav-item">
-                        <a href="bitbo-admin-households.html" class="side-nav-link">
-                            <i class="uil-home-alt"></i>
-                            <span> Households </span>
-                        </a>
-                    </li>
-
-                    <li class="side-nav-item">
-                        <a href="bitbo-admin-brgyid.html" class="side-nav-link">
-                            <i class="uil-postcard"></i>
-                            <span> Brgy. ID </span>
-                        </a>
-                    </li>
-
-                    <li class="side-nav-item">
-                        <a href="bitbo-admin-payment.html" class="side-nav-link">
-                            <i class="uil-bill"></i>
-                            <span> Payment </span>
-                        </a>
-                    </li>
-
-                    <li class="side-nav-item">
-                        <a href="bitbo-admin-events.html" class="side-nav-link">
-                            <i class="uil-trophy"></i>
-                            <span> Events </span>
-                        </a>
-                    </li>
-
-                    <li class="side-nav-item">
-                        <a href="bitbo-admin-logs.html" class="side-nav-link">
-                            <i class="uil-notes"></i>
-                            <span> Logs </span>
-                        </a>
-                    </li>
                 </ul>
-
+                
             </div>
             <!-- Sidebar -left -->
 
@@ -126,21 +90,18 @@
                 <div class="navbar-custom">
                     <ul class="list-unstyled topbar-menu float-end mb-0">
                         <li class="dropdown notification-list d-lg-none">
-                            <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#"
-                                role="button" aria-haspopup="false" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                                 <i class="dripicons-search noti-icon"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-animated dropdown-lg p-0">
                                 <form class="p-3">
-                                    <input type="text" class="form-control" placeholder="Search ..."
-                                        aria-label="Recipient's username">
+                                    <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
                                 </form>
                             </div>
                         </li>
 
                         <li class="dropdown notification-list">
-                            <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#"
-                                role="button" aria-haspopup="false" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                                 <i class="dripicons-bell noti-icon"></i>
                                 <span class="noti-icon-badge"></span>
                             </a>
@@ -158,6 +119,15 @@
                                 </div>
 
                                 <div style="max-height: 230px;" data-simplebar="">
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-primary">
+                                            <i class="mdi mdi-comment-account-outline"></i>
+                                        </div>
+                                        <p class="notify-details">Caleb Flakelar commented on Admin
+                                            <small class="text-muted">1 min ago</small>
+                                        </p>
+                                    </a>
 
                                     <!-- item-->
                                     <a href="javascript:void(0);" class="dropdown-item notify-item">
@@ -170,45 +140,49 @@
                                     </a>
 
                                     <!-- item-->
-                                    <a href="bitbo-admin-blotter.html" class="dropdown-item notify-item">
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
                                         <div class="notify-icon">
-                                            <img src="../assets/images/users/profile1.png"
-                                                class="img-fluid rounded-circle" alt="">
-                                        </div>
-                                        <p class="notify-details">Juan Dela Cruz</p>
+                                            <img src="../assets/images/users/avatar-2.jpg" class="img-fluid rounded-circle" alt=""> </div>
+                                        <p class="notify-details">Cristina Pride</p>
                                         <p class="text-muted mb-0 user-msg">
-                                            <small>Requested a blotter.</small>
+                                            <small>Hi, How are you? What about our next meeting</small>
                                         </p>
                                     </a>
 
                                     <!-- item-->
-                                    <a href="bitbo-admin-blotter.html" class="dropdown-item notify-item">
-                                        <div class="notify-icon">
-                                            <img src="../assets/images/users/profile2.png"
-                                                class="img-fluid rounded-circle" alt="">
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-primary">
+                                            <i class="mdi mdi-comment-account-outline"></i>
                                         </div>
-                                        <p class="notify-details">Maria Clara</p>
-                                        <p class="text-muted mb-0 user-msg">
-                                            <small>Requested a business permit.</small>
+                                        <p class="notify-details">Caleb Flakelar commented on Admin
+                                            <small class="text-muted">4 days ago</small>
                                         </p>
                                     </a>
 
                                     <!-- item-->
                                     <a href="javascript:void(0);" class="dropdown-item notify-item">
                                         <div class="notify-icon">
-                                            <img src="../assets/images/users/profile3.png"
-                                                class="img-fluid rounded-circle" alt="">
-                                        </div>
-                                        <p class="notify-details">Sisa Usisa</p>
+                                            <img src="assets/images/users/avatar-4.jpg" class="img-fluid rounded-circle" alt=""> </div>
+                                        <p class="notify-details">Karen Robinson</p>
                                         <p class="text-muted mb-0 user-msg">
-                                            <small>Requested a Brgy. Indigency.</small>
+                                            <small>Wow ! this admin looks good and awesome design</small>
+                                        </p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-info">
+                                            <i class="mdi mdi-heart"></i>
+                                        </div>
+                                        <p class="notify-details">Carlos Crouch liked
+                                            <b>Admin</b>
+                                            <small class="text-muted">13 days ago</small>
                                         </p>
                                     </a>
                                 </div>
 
                                 <!-- All-->
-                                <a href="javascript:void(0);"
-                                    class="dropdown-item text-center text-primary notify-item notify-all">
+                                <a href="javascript:void(0);" class="dropdown-item text-center text-primary notify-item notify-all">
                                     View All
                                 </a>
 
@@ -216,39 +190,53 @@
                         </li>
 
                         <li class="notification-list">
-                            <a class="nav-link" href="../../iHealth/admin/ihealth-admin-index.html">
-                                <i class="noti-icon"><button type="button" class="btn btn-info">Switch to
-                                        <strong>iHealth</strong></button></i>
+                            <a class="nav-link" href="bitbo-admin-index.html">
+                                <i class="noti-icon"><button type="button" class="btn btn-primary">Switch to <strong>BITBo.</strong></button></i>
                             </a>
                         </li>
 
                         <li class="dropdown notification-list">
-                            <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown"
-                                href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                <span class="account-user-avatar">
-                                    <img src="../assets/images/users/profile1.png" alt="user-image"
-                                        class="rounded-circle">
+                            <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                <span class="account-user-avatar"> 
+                                    <img src="assets/images/users/avatar-1.jpg" alt="user-image" class="rounded-circle">
                                 </span>
                                 <span>
-                                    <span class="account-user-name">Juan Dela Cruz</span>
-                                    <span class="account-position">Admin</span>
+                                    <span class="account-user-name">Soeng Souy</span>
+                                    <span class="account-position">Founder</span>
                                 </span>
                             </a>
-                            <div
-                                class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
+                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
                                 <!-- item-->
                                 <div class=" dropdown-header noti-title">
                                     <h6 class="text-overflow m-0">Welcome !</h6>
                                 </div>
 
                                 <!-- item-->
-                                <a href="bitbo-admin-account.html" class="dropdown-item notify-item">
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
                                     <i class="mdi mdi-account-circle me-1"></i>
                                     <span>My Account</span>
                                 </a>
 
                                 <!-- item-->
-                                <a href="../login-admin.html" class="dropdown-item notify-item">
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="mdi mdi-account-edit me-1"></i>
+                                    <span>Settings</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="mdi mdi-lifebuoy me-1"></i>
+                                    <span>Support</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="mdi mdi-lock-outline me-1"></i>
+                                    <span>Lock Screen</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
                                     <i class="mdi mdi-logout me-1"></i>
                                     <span>Logout</span>
                                 </a>
@@ -262,8 +250,7 @@
                     <div class="app-search dropdown d-none d-lg-block">
                         <form>
                             <div class="input-group">
-                                <input type="text" class="form-control dropdown-toggle" placeholder="Search..."
-                                    id="top-search">
+                                <input type="text" class="form-control dropdown-toggle" placeholder="Search..." id="top-search">
                                 <span class="mdi mdi-magnify search-icon"></span>
                                 <button class="input-group-text btn-primary" type="submit">Search</button>
                             </div>
@@ -272,8 +259,26 @@
                         <div class="dropdown-menu dropdown-menu-animated dropdown-lg" id="search-dropdown">
                             <!-- item-->
                             <div class="dropdown-header noti-title">
-                                <h5 class="text-overflow mb-1">Found <span class="text-danger">17</span> results</h5>
+                                <h5 class="text-overflow mb-2">Found <span class="text-danger">17</span> results</h5>
                             </div>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="uil-notes font-16 me-1"></i>
+                                <span>Analytics Report</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="uil-life-ring font-16 me-1"></i>
+                                <span>How can I help you?</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="uil-cog font-16 me-1"></i>
+                                <span>User profile settings</span>
+                            </a>
 
                             <!-- item-->
                             <div class="dropdown-header noti-title">
@@ -284,12 +289,10 @@
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item notify-item">
                                     <div class="d-flex">
-                                        <img class="d-flex me-2 rounded-circle"
-                                            src="../assets/images/users/profile1.png" alt="Generic placeholder image"
-                                            height="32">
+                                        <img class="d-flex me-2 rounded-circle" src="../assets/images/users/avatar-2.jpg" alt="Generic placeholder image" height="32">
                                         <div class="w-100">
-                                            <h5 class="m-0 font-14">Juan Dela Cruz</h5>
-                                            <span class="font-12 mb-0">Brgy. Official</span>
+                                            <h5 class="m-0 font-14">Erwin Brown</h5>
+                                            <span class="font-12 mb-0">UI Designer</span>
                                         </div>
                                     </div>
                                 </a>
@@ -297,25 +300,10 @@
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item notify-item">
                                     <div class="d-flex">
-                                        <img class="d-flex me-2 rounded-circle"
-                                            src="../assets/images/users/profile2.png" alt="Generic placeholder image"
-                                            height="32">
+                                        <img class="d-flex me-2 rounded-circle" src="../assets/images/users/avatar-5.jpg" alt="Generic placeholder image" height="32">
                                         <div class="w-100">
-                                            <h5 class="m-0 font-14">Maria Clara</h5>
-                                            <span class="font-12 mb-0">Helpdesk</span>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <!-- item-->
-                                <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                    <div class="d-flex">
-                                        <img class="d-flex me-2 rounded-circle"
-                                            src="../assets/images/users/profile3.png" alt="Generic placeholder image"
-                                            height="32">
-                                        <div class="w-100">
-                                            <h5 class="m-0 font-14">Sisa Usisa</h5>
-                                            <span class="font-12 mb-0">Staff</span>
+                                            <h5 class="m-0 font-14">Jacob Deo</h5>
+                                            <span class="font-12 mb-0">Developer</span>
                                         </div>
                                     </div>
                                 </a>
@@ -324,6 +312,7 @@
                     </div>
                 </div>
                 <!-- end Topbar -->
+
 
                 <!-- Start Content-->
                 <div class="container-fluid">
