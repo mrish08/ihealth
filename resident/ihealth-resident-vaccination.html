@@ -388,338 +388,209 @@
                     </div>
                     <!-- end page title -->
 
-                    <ul class="nav nav-tabs">
-                        
-                        <li class="nav-item">
-                            <a href="#pending" data-bs-toggle="tab" aria-expanded="true" class="nav-link active">
-                                <i class="mdi mdi-account-circle d-md-none d-block"></i>
-                                <span class="d-none d-md-block">Pending</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#approved" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
-                                <i class="mdi mdi-settings-outline d-md-none d-block"></i>
-                                <span class="d-none d-md-block">Approved</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#declined" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
-                                <i class="mdi mdi-settings-outline d-md-none d-block"></i>
-                                <span class="d-none d-md-block">Declined</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#history" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
-                                <i class="mdi mdi-settings-outline d-md-none d-block"></i>
-                                <span class="d-none d-md-block">History</span>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <div class="tab-content">
-                        <!-- First Tab -->
-                        <div class="tab-pane show active" id="pending">
-                            
-                        <div class="row">
+                    <div class="row">
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="row mb-2">
-                                        <div class="col-xl-8">
-                                            <form class="row gy-2 gx-2 align-items-center justify-content-xl-start justify-content-between">
-                                                <div class="col-auto">
-                                                    <label for="inputPassword2" class="visually-hidden">Search</label>
-                                                    <input type="search" class="form-control" id="inputPassword2" placeholder="Search..."> <br><br>
-                                                </div>
-                                            </form>
-                                        </div>
+                                    <h4 class="header-title">Input Masks</h4>
+                                    <p class="text-muted font-14">
+                                        A jQuery Plugin to make masks on form fields and HTML elements.
+                                    </p>
 
-                                        <div class="table-responsive">
-                                            <table class="table table-centered mb-0">
-                                                <thead class="table-light">
-                                                    <tr>
-                                                        <th style="width: 20px;">
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck1">
-                                                                <label class="form-check-label" for="customCheck1">&nbsp;</label>
-                                                            </div>
-                                                        </th>
-                                                        <th>Appointment ID</th>
-                                                        <th>Name</th>
-                                                        <th>Date & Time</th>
-                                                        <th>Address</th>
-                                                        <th>Status</th>
-                                                        <th style="width: 125px;">Action</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck2">
-                                                                <label class="form-check-label" for="customCheck2">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">VA-0001</a> </td>
-                                                        <td> Maria Leonora Teresa </td>
+                                    <ul class="nav nav-tabs nav-bordered mb-3">
+                                        <li class="nav-item">
+                                            <a href="#input-masks-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
+                                                Preview
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#input-masks-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+                                                Code
+                                            </a>
+                                        </li>
+                                    </ul> <!-- end nav-->
+                                    <div class="tab-content">
+                                        <div class="tab-pane show active" id="input-masks-preview">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <form action="#">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Date</label>
+                                                            <input type="text" class="form-control" data-toggle="input-mask" data-mask-format="00/00/0000">
+                                                            <span class="font-13 text-muted">e.g "DD/MM/YYYY"</span>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Hour</label>
+                                                            <input type="text" class="form-control" data-toggle="input-mask" data-mask-format="00:00:00">
+                                                            <span class="font-13 text-muted">e.g "HH:MM:SS"</span>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Date & Hour</label>
+                                                            <input type="text" class="form-control" data-toggle="input-mask" data-mask-format="00/00/0000 00:00:00">
+                                                            <span class="font-13 text-muted">e.g "DD/MM/YYYY HH:MM:SS"</span>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label class="form-label">ZIP Code</label>
+                                                            <input type="text" class="form-control" data-toggle="input-mask" data-mask-format="00000-000">
+                                                            <span class="font-13 text-muted">e.g "xxxxx-xxx"</span>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Crazy Zip Code</label>
+                                                            <input type="text" class="form-control" data-toggle="input-mask" data-mask-format="0-00-00-00">
+                                                            <span class="font-13 text-muted">e.g "x-xx-xx-xx"</span>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Money</label>
+                                                            <input type="text" class="form-control" data-toggle="input-mask" data-mask-format="000.000.000.000.000,00" data-reverse="true">
+                                                            <span class="font-13 text-muted">e.g "Your money"</span>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Money 2</label>
+                                                            <input type="text" class="form-control" data-toggle="input-mask" data-mask-format="#.##0,00" data-reverse="true">
+                                                            <span class="font-13 text-muted">e.g "#.##0,00"</span>
+                                                        </div>
+                
+                                                    </form>
+                                                </div> <!-- end col -->
+    
+                                                <div class="col-md-6">
+                                                    <form action="#">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Telephone</label>
+                                                            <input type="text" class="form-control" data-toggle="input-mask" data-mask-format="0000-0000">
+                                                            <span class="font-13 text-muted">e.g "xxxx-xxxx"</span>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Telephone with Code Area</label>
+                                                            <input type="text" class="form-control" data-toggle="input-mask" data-mask-format="(00) 0000-0000">
+                                                            <span class="font-13 text-muted">e.g "(xx) xxxx-xxxx"</span>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label class="form-label">US Telephone</label>
+                                                            <input type="text" class="form-control" data-toggle="input-mask" data-mask-format="(000) 000-0000">
+                                                            <span class="font-13 text-muted">e.g "(xxx) xxx-xxxx"</span>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label class="form-label">São Paulo Celphones</label>
+                                                            <input type="text" class="form-control" data-toggle="input-mask" data-mask-format="(00) 00000-0000">
+                                                            <span class="font-13 text-muted">e.g "(xx) xxxxx-xxxx"</span>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label class="form-label">CPF</label>
+                                                            <input type="text" class="form-control" data-toggle="input-mask" data-mask-format="000.000.000-00" data-reverse="true">
+                                                            <span class="font-13 text-muted">e.g "xxx.xxx.xxxx-xx"</span>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label class="form-label">CNPJ</label>
+                                                            <input type="text" class="form-control" data-toggle="input-mask" data-mask-format="00.000.000/0000-00" data-reverse="true">
+                                                            <span class="font-13 text-muted">e.g "xx.xxx.xxx/xxxx-xx"</span>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label class="form-label">IP Address</label>
+                                                            <input type="text" class="form-control" data-toggle="input-mask" data-mask-format="099.099.099.099" data-reverse="true">
+                                                            <span class="font-13 text-muted">e.g "xxx.xxx.xxx.xxx"</span>
+                                                        </div>
+                                                    </form>
+                                                </div> <!-- end col -->
+                                            </div>
+                                            <!-- end row -->                      
+                                        </div> <!-- end preview-->
+                                    
+                                        <div class="tab-pane" id="input-masks-code">
+                                            <pre class="mb-0">
+                                                <span class="html escape">
+                                                    &lt;div class=&quot;mb-3&quot;&gt;
+                                                        &lt;label class=&quot;form-label&quot;&gt;Date&lt;/label&gt;
+                                                        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; data-toggle=&quot;input-mask&quot; data-mask-format=&quot;00/00/0000&quot;&gt;
+                                                        &lt;span class=&quot;font-13 text-muted&quot;&gt;e.g &quot;DD/MM/YYYY&quot;&lt;/span&gt;
+                                                    &lt;/div&gt;
+                                                    
+                                                    &lt;div class=&quot;mb-3&quot;&gt;
+                                                        &lt;label class=&quot;form-label&quot;&gt;Hour&lt;/label&gt;
+                                                        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; data-toggle=&quot;input-mask&quot; data-mask-format=&quot;00:00:00&quot;&gt;
+                                                        &lt;span class=&quot;font-13 text-muted&quot;&gt;e.g &quot;HH:MM:SS&quot;&lt;/span&gt;
+                                                    &lt;/div&gt;
+                                                    
+                                                    &lt;div class=&quot;mb-3&quot;&gt;
+                                                        &lt;label class=&quot;form-label&quot;&gt;Date &amp; Hour&lt;/label&gt;
+                                                        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; data-toggle=&quot;input-mask&quot; data-mask-format=&quot;00/00/0000 00:00:00&quot;&gt;
+                                                        &lt;span class=&quot;font-13 text-muted&quot;&gt;e.g &quot;DD/MM/YYYY HH:MM:SS&quot;&lt;/span&gt;
+                                                    &lt;/div&gt;
+                                                    
+                                                    &lt;div class=&quot;mb-3&quot;&gt;
+                                                        &lt;label class=&quot;form-label&quot;&gt;ZIP Code&lt;/label&gt;
+                                                        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; data-toggle=&quot;input-mask&quot; data-mask-format=&quot;00000-000&quot;&gt;
+                                                        &lt;span class=&quot;font-13 text-muted&quot;&gt;e.g &quot;xxxxx-xxx&quot;&lt;/span&gt;
+                                                    &lt;/div&gt;
+                                                    
+                                                    &lt;div class=&quot;mb-3&quot;&gt;
+                                                        &lt;label class=&quot;form-label&quot;&gt;Crazy Zip Code&lt;/label&gt;
+                                                        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; data-toggle=&quot;input-mask&quot; data-mask-format=&quot;0-00-00-00&quot;&gt;
+                                                        &lt;span class=&quot;font-13 text-muted&quot;&gt;e.g &quot;x-xx-xx-xx&quot;&lt;/span&gt;
+                                                    &lt;/div&gt;
+                                                    
+                                                    &lt;div class=&quot;mb-3&quot;&gt;
+                                                        &lt;label class=&quot;form-label&quot;&gt;Money&lt;/label&gt;
+                                                        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; data-toggle=&quot;input-mask&quot; data-mask-format=&quot;000.000.000.000.000,00&quot; data-reverse=&quot;true&quot;&gt;
+                                                        &lt;span class=&quot;font-13 text-muted&quot;&gt;e.g &quot;Your money&quot;&lt;/span&gt;
+                                                    &lt;/div&gt;
+                                                    
+                                                    &lt;div class=&quot;mb-3&quot;&gt;
+                                                        &lt;label class=&quot;form-label&quot;&gt;Money 2&lt;/label&gt;
+                                                        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; data-toggle=&quot;input-mask&quot; data-mask-format=&quot;#.##0,00&quot; data-reverse=&quot;true&quot;&gt;
+                                                        &lt;span class=&quot;font-13 text-muted&quot;&gt;e.g &quot;#.##0,00&quot;&lt;/span&gt;
+                                                    &lt;/div&gt;
+                                                    
+                                                    &lt;div class=&quot;mb-3&quot;&gt;
+                                                        &lt;label class=&quot;form-label&quot;&gt;Telephone&lt;/label&gt;
+                                                        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; data-toggle=&quot;input-mask&quot; data-mask-format=&quot;0000-0000&quot;&gt;
+                                                        &lt;span class=&quot;font-13 text-muted&quot;&gt;e.g &quot;xxxx-xxxx&quot;&lt;/span&gt;
+                                                    &lt;/div&gt;
+                                                    
+                                                    &lt;div class=&quot;mb-3&quot;&gt;
+                                                        &lt;label class=&quot;form-label&quot;&gt;Telephone with Code Area&lt;/label&gt;
+                                                        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; data-toggle=&quot;input-mask&quot; data-mask-format=&quot;(00) 0000-0000&quot;&gt;
+                                                        &lt;span class=&quot;font-13 text-muted&quot;&gt;e.g &quot;(xx) xxxx-xxxx&quot;&lt;/span&gt;
+                                                    &lt;/div&gt;
+                                                    
+                                                    &lt;div class=&quot;mb-3&quot;&gt;
+                                                        &lt;label class=&quot;form-label&quot;&gt;US Telephone&lt;/label&gt;
+                                                        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; data-toggle=&quot;input-mask&quot; data-mask-format=&quot;(000) 000-0000&quot;&gt;
+                                                        &lt;span class=&quot;font-13 text-muted&quot;&gt;e.g &quot;(xxx) xxx-xxxx&quot;&lt;/span&gt;
+                                                    &lt;/div&gt;
+                                                    
+                                                    &lt;div class=&quot;mb-3&quot;&gt;
+                                                        &lt;label class=&quot;form-label&quot;&gt;S&atilde;o Paulo Celphones&lt;/label&gt;
+                                                        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; data-toggle=&quot;input-mask&quot; data-mask-format=&quot;(00) 00000-0000&quot;&gt;
+                                                        &lt;span class=&quot;font-13 text-muted&quot;&gt;e.g &quot;(xx) xxxxx-xxxx&quot;&lt;/span&gt;
+                                                    &lt;/div&gt;
+                                                    
+                                                    &lt;div class=&quot;mb-3&quot;&gt;
+                                                        &lt;label class=&quot;form-label&quot;&gt;CPF&lt;/label&gt;
+                                                        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; data-toggle=&quot;input-mask&quot; data-mask-format=&quot;000.000.000-00&quot; data-reverse=&quot;true&quot;&gt;
+                                                        &lt;span class=&quot;font-13 text-muted&quot;&gt;e.g &quot;xxx.xxx.xxxx-xx&quot;&lt;/span&gt;
+                                                    &lt;/div&gt;
+                                                    
+                                                    &lt;div class=&quot;mb-3&quot;&gt;
+                                                        &lt;label class=&quot;form-label&quot;&gt;CNPJ&lt;/label&gt;
+                                                        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; data-toggle=&quot;input-mask&quot; data-mask-format=&quot;00.000.000/0000-00&quot; data-reverse=&quot;true&quot;&gt;
+                                                        &lt;span class=&quot;font-13 text-muted&quot;&gt;e.g &quot;xx.xxx.xxx/xxxx-xx&quot;&lt;/span&gt;
+                                                    &lt;/div&gt;
+                                                    
+                                                    &lt;div class=&quot;mb-3&quot;&gt;
+                                                        &lt;label class=&quot;form-label&quot;&gt;IP Address&lt;/label&gt;
+                                                        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; data-toggle=&quot;input-mask&quot; data-mask-format=&quot;099.099.099.099&quot; data-reverse=&quot;true&quot;&gt;
+                                                        &lt;span class=&quot;font-13 text-muted&quot;&gt;e.g &quot;xxx.xxx.xxx.xxx&quot;&lt;/span&gt;
+                                                    &lt;/div&gt;
+                                                </span>
+                                            </pre> <!-- end highlight-->
+                                        </div> <!-- end preview code-->
+                                    </div> <!-- end tab-content-->
 
-                                                        <td>September 17 2022 <small class="text-muted">02:30 PM</small></td>
-                                                        </td>
-                                                        <td>
-                                                            Commonwealth, Quezon City
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-info-lighten rounded-pill">Pending</span>
-                                                        </td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-outline-success btn-rounded"><i class="dripicons-checkmark"></i></button>
-                                                            <button type="button" class="btn btn-outline-danger btn-rounded"><i class="mdi mdi-delete"></i></button>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck3">
-                                                                <label class="form-check-label" for="customCheck3">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">VA-0002</a> </td>
-                                                        <td> Maria Leonora Teresa </td>
-
-                                                        <td>September 17 2022 <small class="text-muted">02:30 PM</small></td>
-                                                        </td>
-                                                        <td>
-                                                            Commonwealth, Quezon City
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-info-lighten rounded-pill">Pending</span>
-                                                        </td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-outline-success btn-rounded"><i class="dripicons-checkmark"></i></button>
-                                                            <button type="button" class="btn btn-outline-danger btn-rounded"><i class="mdi mdi-delete"></i></button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck4">
-                                                                <label class="form-check-label" for="customCheck4">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">VA-0003</a> </td>
-                                                        <td> Maria Leonora Teresa </td>
-
-                                                        <td>September 17 2022 <small class="text-muted">02:30 PM</small></td>
-                                                        </td>
-                                                        <td>
-                                                            Commonwealth, Quezon City
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-info-lighten rounded-pill">Pending</span>
-                                                        </td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-outline-success btn-rounded"><i class="dripicons-checkmark"></i></button>
-                                                            <button type="button" class="btn btn-outline-danger btn-rounded"><i class="mdi mdi-delete"></i></button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck5">
-                                                                <label class="form-check-label" for="customCheck5">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">VA-0004</a> </td>
-                                                        <td> Maria Leonora Teresa </td>
-
-                                                        <td>September 17 2022 <small class="text-muted">02:30 PM</small></td>
-                                                        </td>
-                                                        <td>
-                                                            Commonwealth, Quezon City
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-info-lighten rounded-pill">Pending</span>
-                                                        </td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-outline-success btn-rounded"><i class="dripicons-checkmark"></i></button>
-                                                            <button type="button" class="btn btn-outline-danger btn-rounded"><i class="mdi mdi-delete"></i></button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck6">
-                                                                <label class="form-check-label" for="customCheck6">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">VA-0005</a> </td>
-                                                        <td> Maria Leonora Teresa </td>
-
-                                                        <td>September 17 2022 <small class="text-muted">02:30 PM</small></td>
-                                                        </td>
-                                                        <td>
-                                                            Commonwealth, Quezon City
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-info-lighten rounded-pill">Pending</span>
-                                                        </td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-outline-success btn-rounded"><i class="dripicons-checkmark"></i></button>
-                                                            <button type="button" class="btn btn-outline-danger btn-rounded"><i class="mdi mdi-delete"></i></button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck7">
-                                                                <label class="form-check-label" for="customCheck7">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">VA-0006</a> </td>
-                                                        <td> Maria Leonora Teresa </td>
-
-                                                        <td>September 17 2022 <small class="text-muted">02:30 PM</small></td>
-                                                        </td>
-                                                        <td>
-                                                            Commonwealth, Quezon City
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-info-lighten rounded-pill">Pending</span>
-                                                        </td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-outline-success btn-rounded"><i class="dripicons-checkmark"></i></button>
-                                                            <button type="button" class="btn btn-outline-danger btn-rounded"><i class="mdi mdi-delete"></i></button>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck8">
-                                                                <label class="form-check-label" for="customCheck8">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">VA-0007</a> </td>
-                                                        <td> Maria Leonora Teresa </td>
-
-                                                        <td>September 17 2022 <small class="text-muted">02:30 PM</small></td>
-                                                        </td>
-                                                        <td>
-                                                            Commonwealth, Quezon City
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-info-lighten rounded-pill">Pending</span>
-                                                        </td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-outline-success btn-rounded"><i class="dripicons-checkmark"></i></button>
-                                                            <button type="button" class="btn btn-outline-danger btn-rounded"><i class="mdi mdi-delete"></i></button>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck9">
-                                                                <label class="form-check-label" for="customCheck9">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">VA-0008</a> </td>
-                                                        <td> Maria Leonora Teresa </td>
-
-                                                        <td>September 17 2022 <small class="text-muted">02:30 PM</small></td>
-                                                        </td>
-                                                        <td>
-                                                            Commonwealth, Quezon City
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-info-lighten rounded-pill">Pending</span>
-                                                        </td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-outline-success btn-rounded"><i class="dripicons-checkmark"></i></button>
-                                                            <button type="button" class="btn btn-outline-danger btn-rounded"><i class="mdi mdi-delete"></i></button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck10">
-                                                                <label class="form-check-label" for="customCheck10">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">VA-0009</a> </td>
-                                                        <td> Maria Leonora Teresa </td>
-
-                                                        <td>September 17 2022 <small class="text-muted">02:30 PM</small></td>
-                                                        </td>
-                                                        <td>
-                                                            Commonwealth, Quezon City
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-info-lighten rounded-pill">Pending</span>
-                                                        </td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-outline-success btn-rounded"><i class="dripicons-checkmark"></i></button>
-                                                            <button type="button" class="btn btn-outline-danger btn-rounded"><i class="mdi mdi-delete"></i></button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check">
-                                                                <input type="checkbox" class="form-check-input" id="customCheck11">
-                                                                <label class="form-check-label" for="customCheck11">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td><a href="apps-ecommerce-orders-details.html" class="text-body fw-bold">VA-0010</a> </td>
-                                                        <td> Maria Leonora Teresa </td>
-
-                                                        <td>September 17 2022 <small class="text-muted">02:30 PM</small></td>
-                                                        </td>
-                                                        <td>
-                                                            Commonwealth, Quezon City
-                                                        </td>
-                                                        <td>
-                                                            <span class="badge badge-info-lighten rounded-pill">Pending</span>
-                                                        </td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-outline-success btn-rounded"><i class="dripicons-checkmark"></i></button>
-                                                            <button type="button" class="btn btn-outline-danger btn-rounded"><i class="mdi mdi-delete"></i></button>
-                                                        </td>
-                                                    </tr>
-
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div> <!-- end card-body-->
-                                </div> <!-- end card-->
-                            </div> <!-- end col -->
-                        </div>
-                        <!-- end row -->
-
-                    </div> <!-- container -->
-
-                        </div>
-
-                        <!-- Second Tab -->
-                        <div class="tab-pane" id="approved">
-                            <p>...</p>
-                        </div>
-
-                        <!-- Third Tab -->
-                        <div class="tab-pane" id="declined">
-                            <p>...</p>
-                        </div>
-
-                        <!-- Fourth Tab -->
-                        <div class="tab-pane" id="history">
-                            <p>...</p>
-                        </div>
-
-                        
-                    </div>
-
-
-                </div> <!-- content -->
+                                </div> <!-- end card-body -->
+                            </div> <!-- end card -->
+                        </div> <!-- end col -->
+                    </div> <!-- end row --> 
 
 
                 <!-- Footer Start -->
