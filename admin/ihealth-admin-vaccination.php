@@ -380,6 +380,9 @@
 
                                     <button type="button" class="font-14 btn btn-primary btn-rounded"><i class="mdi mdi-plus-circle-outline"></i> Create New
                                         Appointment</button></h4>
+                                        <a href="javascript:void(0);" class="font-14 btn btn-primary btn-rounded" data-bs-toggle="modal" data-bs-target="#staticBackdrop0"><i class="mdi mdi-plus-circle-outline"></i> Create New
+                                        Appointment</a>
+                                        <?php include('admin-add-patient.php')?>
                             </div>
                         </div>
                     </div>
