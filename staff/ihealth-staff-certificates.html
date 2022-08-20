@@ -91,7 +91,7 @@
     
                             <a href="ihealth-staff-certificates.html" class="side-nav-link">
     
-                            <a href="ihealth-admin-reports.html" class="side-nav-link">
+                            <a href="ihealth-admin-certificates.html" class="side-nav-link">
     
                                 <i class="uil-notebooks"></i>
                                 <span> Certificates </span>
@@ -334,980 +334,271 @@
                     </div>
                     <!-- end page title -->
 
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-body">
+                    <ul class="nav nav-tabs">
+                        
+                        <li class="nav-item">
+                            <a href="#pending" data-bs-toggle="tab" aria-expanded="true" class="nav-link active">
+                                <i class="mdi mdi-account-circle d-md-none d-block"></i>
+                                <span class="d-none d-md-block">Pending</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#approved" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
+                                <i class="mdi mdi-settings-outline d-md-none d-block"></i>
+                                <span class="d-none d-md-block">Approved</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#declined" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
+                                <i class="mdi mdi-settings-outline d-md-none d-block"></i>
+                                <span class="d-none d-md-block">Declined</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#history" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
+                                <i class="mdi mdi-settings-outline d-md-none d-block"></i>
+                                <span class="d-none d-md-block">History</span>
+                            </a>
+                        </li>
+                    </ul>
 
-                                    <ul class="nav nav-pills bg-nav-pills mb-3">
-                                        <li class="nav-item">
-                                            <a href="#buttons-table-pending" data-bs-toggle="tab" aria-expanded="false"
-                                                class="nav-link active">
-                                                Pending
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#buttons-table-approved" data-bs-toggle="tab" aria-expanded="true"
-                                                class="nav-link">
-                                                Approved
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#buttons-table-declined" data-bs-toggle="tab" aria-expanded="true"
-                                                class="nav-link">
-                                                Declined
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#buttons-table-history" data-bs-toggle="tab" aria-expanded="true"
-                                                class="nav-link">
-                                                History
-                                            </a>
-                                        </li>
-                                    </ul> <!-- end nav-->
-                                    <div class="tab-content">
-                                        <div class="tab-pane show active" id="buttons-table-pending">
-                                            <table id="scroll-vertical-datatable"
-                                                class="table dt-responsive nowrap w-100">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Request No.</th>
-                                                        <th>Name</th>
-                                                        <th>Purpose</th>
-                                                        <th>Action</th>
-                                                    </tr>
-                                                </thead>
+                    <div class="tab-content">
+                        <!-- First Tab -->
+                        <div class="tab-pane show active" id="pending">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row mb-2">
+                                                <div class="col-xl-8">
+                                                    <form
+                                                        class="row gy-2 gx-2 align-items-center justify-content-xl-start justify-content-between">
+                                                        <div class="col-auto">
+                                                            <label for="inputPassword2"
+                                                                class="visually-hidden">Search</label>
+                                                            <input type="search" class="form-control"
+                                                                id="inputPassword2" placeholder="Search..."> <br><br>
+                                                        </div>
+                                                    </form>
+                                                </div>
 
+                                                <div class="table-responsive">
+                                                    <table class="table table-centered mb-0">
+                                                        <thead class="table-light">
+                                                            <tr>
+                                                                <th style="width: 20px;">
+                                                                    <div class="form-check">
+                                                                        <input type="checkbox" class="form-check-input"
+                                                                            id="customCheck1">
+                                                                        <label class="form-check-label"
+                                                                            for="customCheck1">&nbsp;</label>
+                                                                    </div>
+                                                                </th>
+                                                                <th>Appointment ID</th>
+                                                                <th>Name</th>
+                                                                <th>Date & Time</th>
+                                                                <th>Address</th>
+                                                                <th>Status</th>
+                                                                <th style="width: 125px;">Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                        <tfoot>
+        
+                                                        </tfoot>
+                                                    </table>
+                                                </div>
+                                            </div> <!-- end card-body-->
+                                        </div> <!-- end card-->
+                                    </div> <!-- end col -->
+                                </div>
+                                <!-- end row -->
 
-                                                <tbody>
-                                                    <tr>
-                                                        <td>HC-2022-0001</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0002</td>
-                                                        <td>Garrett Winters</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0003</td>
-                                                        <td>Ashton Cox</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0004</td>
-                                                        <td>Cedric Kelly</td>
-                                                        <td>Barangay Clearance</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0005</td>
-                                                        <td>Airi Satou</td>
-                                                        <td>Barangay Clearance</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0006</td>
-                                                        <td>Brielle Williamson</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0007</td>
-                                                        <td>Herrod Chandler</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0008</td>
-                                                        <td>Rhona Davidson</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0009</td>
-                                                        <td>Colleen Hurst</td>
-                                                        <td>Business Permit</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0010</td>
-                                                        <td>Sonya Frost</td>
-                                                        <td>Business Permit</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0001</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0002</td>
-                                                        <td>Garrett Winters</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0003</td>
-                                                        <td>Ashton Cox</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0004</td>
-                                                        <td>Cedric Kelly</td>
-                                                        <td>Barangay Clearance</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0005</td>
-                                                        <td>Airi Satou</td>
-                                                        <td>Barangay Clearance</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0006</td>
-                                                        <td>Brielle Williamson</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0007</td>
-                                                        <td>Herrod Chandler</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0008</td>
-                                                        <td>Rhona Davidson</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0009</td>
-                                                        <td>Colleen Hurst</td>
-                                                        <td>Business Permit</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0010</td>
-                                                        <td>Sonya Frost</td>
-                                                        <td>Business Permit</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div> <!-- end pending-->
+                            </div> <!-- container -->
+                        </div>
+                        <!-- Second Tab -->
+                        <div class="tab-pane" id="approved">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row mb-2">
+                                                <div class="col-xl-8">
+                                                    <form
+                                                        class="row gy-2 gx-2 align-items-center justify-content-xl-start justify-content-between">
+                                                        <div class="col-auto">
+                                                            <label for="inputPassword2"
+                                                                class="visually-hidden">Search</label>
+                                                            <input type="search" class="form-control"
+                                                                id="inputPassword2" placeholder="Search..."> <br><br>
+                                                        </div>
+                                                    </form>
+                                                </div>
 
-                                        <div class="tab-pane" id="buttons-table-approved">
-                                            <table id="scroll-vertical-datatable" class="table dt-responsive w-100">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Request No.</th>
-                                                        <th>Name</th>
-                                                        <th>Purpose</th>
-                                                        <th>Action</th>
-                                                    </tr>
-                                                </thead>
+                                                <div class="table-responsive">
+                                                    <table class="table table-centered mb-0">
+                                                        <thead class="table-light">
+                                                            <tr>
+                                                                <th style="width: 20px;">
+                                                                    <div class="form-check">
+                                                                        <input type="checkbox" class="form-check-input"
+                                                                            id="customCheck1">
+                                                                        <label class="form-check-label"
+                                                                            for="customCheck1">&nbsp;</label>
+                                                                    </div>
+                                                                </th>
+                                                                <th>Appointment ID</th>
+                                                                <th>Name</th>
+                                                                <th>Date & Time</th>
+                                                                <th>Address</th>
+                                                                <th>Status</th>
+                                                                <th style="width: 125px;">Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                        <tfoot>
+        
+                                                        </tfoot>
+                                                    </table>
+                                                </div>
+                                            </div> <!-- end card-body-->
+                                        </div> <!-- end card-->
+                                    </div> <!-- end col -->
+                                </div>
+                                <!-- end row -->
+
+                            </div> <!-- container -->
+                        </div>
+
+                        <!-- Third Tab -->
+                        <div class="tab-pane" id="declined">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row mb-2">
+                                                <div class="col-xl-8">
+                                                    <form
+                                                        class="row gy-2 gx-2 align-items-center justify-content-xl-start justify-content-between">
+                                                        <div class="col-auto">
+                                                            <label for="inputPassword2"
+                                                                class="visually-hidden">Search</label>
+                                                            <input type="search" class="form-control"
+                                                                id="inputPassword2" placeholder="Search..."> <br><br>
+                                                        </div>
+                                                    </form>
+                                                </div>
+
+                                                <div class="table-responsive">
+                                                    <table class="table table-centered mb-0">
+                                                        <thead class="table-light">
+                                                            <tr>
+                                                                <th style="width: 20px;">
+                                                                    <div class="form-check">
+                                                                        <input type="checkbox" class="form-check-input"
+                                                                            id="customCheck1">
+                                                                        <label class="form-check-label"
+                                                                            for="customCheck1">&nbsp;</label>
+                                                                    </div>
+                                                                </th>
+                                                                <th>Appointment ID</th>
+                                                                <th>Name</th>
+                                                                <th>Date & Time</th>
+                                                                <th>Address</th>
+                                                                <th>Status</th>
+                                                                <th style="width: 125px;">Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                        <tfoot>
+        
+                                                        </tfoot>
+                                                    </table>
+                                                </div>
+                                            </div> <!-- end card-body-->
+                                        </div> <!-- end card-->
+                                    </div> <!-- end col -->
+                                </div>
+                                <!-- end row -->
+
+                            </div> <!-- container -->
+                        </div>
+                        <!-- Fourth Tab -->
+                        <div class="tab-pane" id="history">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row mb-2">
+                                                <div class="col-xl-8">
+                                                    <form
+                                                        class="row gy-2 gx-2 align-items-center justify-content-xl-start justify-content-between">
+                                                        <div class="col-auto">
+                                                            <label for="inputPassword2"
+                                                                class="visually-hidden">Search</label>
+                                                            <input type="search" class="form-control"
+                                                                id="inputPassword2" placeholder="Search..."> <br><br>
+                                                        </div>
+                                                    </form>
+                                                </div>
+
+                                                <div class="table-responsive">
+                                                    <table class="table table-centered mb-0">
+                                                        <thead class="table-light">
+                                                            <tr>
+                                                                <th style="width: 20px;">
+                                                                    <div class="form-check">
+                                                                        <input type="checkbox" class="form-check-input"
+                                                                            id="customCheck1">
+                                                                        <label class="form-check-label"
+                                                                            for="customCheck1">&nbsp;</label>
+                                                                    </div>
+                                                                </th>
+                                                                <th>Appointment ID</th>
+                                                                <th>Name</th>
+                                                                <th>Date & Time</th>
+                                                                <th>Address</th>
+                                                                <th>Status</th>
+                                                                <th style="width: 125px;">Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                        <tfoot>
+        
+                                                        </tfoot>
+                                                    </table>
+                                                </div>
+                                            </div> <!-- end card-body-->
+                                        </div> <!-- end card-->
+                                    </div> <!-- end col -->
+                                </div>
+                                <!-- end row -->
+
+                            </div> <!-- container -->
+                        </div>
 
 
-                                                <tbody>
-                                                    <tr>
-                                                        <td>HC-2022-0001</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0002</td>
-                                                        <td>Garrett Winters</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0003</td>
-                                                        <td>Ashton Cox</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0004</td>
-                                                        <td>Cedric Kelly</td>
-                                                        <td>Barangay Clearance</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0005</td>
-                                                        <td>Airi Satou</td>
-                                                        <td>Barangay Clearance</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0006</td>
-                                                        <td>Brielle Williamson</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0007</td>
-                                                        <td>Herrod Chandler</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0008</td>
-                                                        <td>Rhona Davidson</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0009</td>
-                                                        <td>Colleen Hurst</td>
-                                                        <td>Business Permit</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0010</td>
-                                                        <td>Sonya Frost</td>
-                                                        <td>Business Permit</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div> <!-- end approved-->
+                        <!-- Second Tab -->
+                        <div class="tab-pane" id="approved">
+                            <p>...</p>
+                        </div>
 
-                                        <div class="tab-pane" id="buttons-table-declined">
-                                            <table id="scroll-vertical-datatable"
-                                                class="table dt-responsive nowrap w-100">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Request No.</th>
-                                                        <th>Name</th>
-                                                        <th>Purpose</th>
-                                                        <th>Action</th>
-                                                    </tr>
-                                                </thead>
+                        <!-- Third Tab -->
+                        <div class="tab-pane" id="declined">
+                            <p>...</p>
+                        </div>
 
+                        <!-- Fourth Tab -->
+                        <div class="tab-pane" id="history">
+                            <p>...</p>
+                        </div>
 
-                                                <tbody>
-                                                    <tr>
-                                                        <td>HC-2022-0001</td>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0002</td>
-                                                        <td>Garrett Winters</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0003</td>
-                                                        <td>Ashton Cox</td>
-                                                        <td>Barangay Certificate of Residency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0004</td>
-                                                        <td>Cedric Kelly</td>
-                                                        <td>Barangay Clearance</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0005</td>
-                                                        <td>Airi Satou</td>
-                                                        <td>Barangay Clearance</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0006</td>
-                                                        <td>Brielle Williamson</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0007</td>
-                                                        <td>Herrod Chandler</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0008</td>
-                                                        <td>Rhona Davidson</td>
-                                                        <td>Barangay Indigency</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0009</td>
-                                                        <td>Colleen Hurst</td>
-                                                        <td>Business Permit</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>HC-2022-0010</td>
-                                                        <td>Sonya Frost</td>
-                                                        <td>Business Permit</td>
-                                                        <td class="table-action">
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-success"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#success-alert-modal"><i
-                                                                        class="mdi mdi-check"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-danger"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#danger-alert-modal"><i
-                                                                        class="mdi mdi-cancel"></i> </button></a>
-                                                            <a href="javascript: void(0);" class="action-icon"> <button
-                                                                    type="button" class="btn btn-info"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#info-header-modal"><i
-                                                                        class="mdi mdi-eye"></i> </button></a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div> <!-- end declined-->
-                                    </div> <!-- end tab-content-->
-                                </div> <!-- end card body-->
-                            </div> <!-- end card -->
-                        </div><!-- end col-->
+                        
                     </div>
-                    <!-- end row-->
-                </div> <!-- container -->
-
-            </div> <!-- content -->
-        </div>
 
         <!-- ============================================================== -->
         <!-- End Page content -->
